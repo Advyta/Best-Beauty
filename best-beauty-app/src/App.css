@@ -1,0 +1,19 @@
+/* .page-background{
+  margin: 2%;
+} */
+.cursor{
+  cursor: pointer;
+}
+.circle{
+  position: relative;
+  left: 12px;
+}
+.circle > i, .circle-icon{
+  font-size: 24px;
+}
+.gray{
+  color: rgb(233, 233, 233);
+}
+.price{
+  z-index: 2;
+}

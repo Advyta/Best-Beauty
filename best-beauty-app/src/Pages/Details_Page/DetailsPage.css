@@ -1,0 +1,25 @@
+.product-name{
+    font-family: "Afacad", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+}
+.color-options{
+    padding: 0px 2px;
+}
+.pink-background{
+    background-color: rgb(254, 210, 209);
+}
+.stock-image{
+    height: 300px;
+}
+.link-to-cart{
+    text-decoration: none;
+    color: rgb(27,27,25);
+}
+.link-to-cart :hover, .add-to-cart :hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.details-img{
+    max-height: 500px;
+}

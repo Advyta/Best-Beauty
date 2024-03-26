@@ -1,0 +1,63 @@
+.navbar-brand{
+    font-family: "Afacad", sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+}
+.background{
+    background-color: rgb(252,252,252) !important;
+}
+.navigation{
+    font-family: "Commissioner", sans-serif !important;
+    background-color: rgb(252,252,252) !important;
+}
+footer{
+    background-color: rgb(29,29,27);
+    color: rgb(242,242,242) !important;
+}
+.footer-list{
+    list-style: none;
+}
+.footer-list > li{
+    padding: 3.5px 0px;
+}
+.brand{
+    font-family: "Afacad", sans-serif !important;
+    font-weight: 700 !important;
+    color: rgb(254,205,77);
+}
+h6{
+    margin-bottom: 10px !important;
+}
+.brand-icon{
+    font-size: 24px;
+    color: rgb(254,205,77);
+    padding-bottom: 18px;
+    cursor: pointer;
+}
+.footnote{
+    font-size: small;
+}
+.cursor > li{
+    cursor: pointer;
+}
+.cart-icon{
+    position: relative;
+    right: 12px;
+}
+.cart{
+    display: none;
+    padding-left: 4px;
+}
+.form-control{
+    width: 150px !important;
+}
+@media screen and (max-width: 576px) {
+    .footer-list > li{
+        padding: 2px 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cart{
+        display: inline;
+    }
+}

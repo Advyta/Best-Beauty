@@ -1,0 +1,13 @@
+.cart-product-img{
+    height: 140px;
+}
+.plus-minus-icon:hover{
+    background-color: rgb(210, 210, 210);
+    border-radius: 4px;
+}
+.cart-image{
+    max-width: 500px;
+}
+.card{
+    text-decoration: none;
+}

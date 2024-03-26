@@ -1,0 +1,89 @@
+.carousel-caption{
+    color: rgb(27,27,25) !important;
+    margin-bottom: 15px;
+}
+.carousel-caption > p{
+    font-family: "Commissioner", sans-serif !important;
+}
+.carousel-caption > h3, .section-title{
+    font-family: "Afacad", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+}
+.carousel-caption > button, .see-more-button{
+    background-color: rgb(254,205,77) !important;
+    font-family: "Commissioner", sans-serif !important;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: rgb(27,27,25);
+}
+.carousel-indicators > button{
+    background-color: rgb(254,205,77) !important;
+    border-radius: 100%;
+    margin: 0px;
+    border: none;
+    /* padding: 5px !important; */
+    aspect-ratio: 1;
+    height: auto !important;
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px !important;
+}
+.carousel-indicators{
+    margin-bottom: 8px !important;
+    gap: 10px;
+}
+.carousel-control-prev, .carousel-control-next{
+    color: black !important;
+}
+.carousel, .slide{
+    height: auto;
+}
+@media screen and (max-width: 1285px) {
+    .carousel-img{
+        padding: 40px 0px;
+    }
+}
+
+.card{
+    cursor: pointer;
+}
+.card-img{
+    padding: 0px 60px;
+}
+.card-text{
+    font-family: "Commissioner", sans-serif !important;
+    margin-bottom: 8px;
+}
+.card-title{
+    font-family: "Afacad", sans-serif !important;
+    z-index: 2;
+}
+
+.yellow{
+    color: rgb(254,205,77);
+}
+.cart{
+    display: none !important;
+}
+.standard-text-bg{
+    background-color: rgb(240,187,187,0.22);
+}
+.standard-text-title{
+    font-family: "Afacad", sans-serif !important;
+}
+.standard-text{
+    font-family: "Commissioner", sans-serif !important;
+}
+.last-notes{
+    left: 23px;
+}
+.card:hover{
+    .cart{
+        display: flex !important;
+    }
+}
+.yellow-bg{
+    background-color: rgb(254,205,77) !important;
+}
