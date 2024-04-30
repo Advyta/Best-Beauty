@@ -1,0 +1,14 @@
+.title {
+  font-family: "Afacad", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.common-text {
+  font-family: "Commissioner", sans-serif !important;
+}
+
+@media screen and (max-width: 780px){
+  .authentication{
+    flex-direction: column;
+  }
+}

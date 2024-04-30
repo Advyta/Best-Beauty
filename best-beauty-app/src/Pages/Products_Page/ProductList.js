@@ -43,18 +43,18 @@ export default function ProductList() {
                     <div className="col-9">
                       <Card.Text className='text-capitalize fw-light lh-sm product-brand mb-1'>from {product.brand}</Card.Text>
                     </div>
-                    <div className="col-3 d-flex">
-                      <Card.Text>
+                    <div className="col-3 d-flex align-items-center">
+                      <Card.Text className='m-0 pe-1'>
                         {product.rating} 
                       </Card.Text>
                       <Card.Text>
-                        {product.rating ? (<FontAwesomeIcon icon={faStar} color='yellow'/>) : ''}
+                        {product.rating ? (<FontAwesomeIcon icon={faStar} className='golden'/>) : ''}
                       </Card.Text>
                       </div>
                   </div>
                   <div className="row justify-content-between align-items-center">
                     <div className="col-4 d-flex p-0">
-                      <span className='gray circle'><i className="fa-solid fa-circle"></i></span>
+                      <span className='gray circle' style={{left: '12px'}}><i className="fa-solid fa-circle"></i></span>
                       <Card.Title>{product.price}€</Card.Title>                      
                     </div>
                     {/* opens product details page */}

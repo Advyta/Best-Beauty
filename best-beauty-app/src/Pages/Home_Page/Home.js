@@ -34,7 +34,6 @@ export default function Home() {
               <Carousel.Caption className="align-self-center">
                 <h3 className="mt-3">{carousel.name}</h3>
                 <p className="mb-3">{carousel.description}</p>
-
                 <Button as={NavLink} to={`/DetailsPage/${carousel.id}`} className='see-more-button'>See more</Button>
               </Carousel.Caption>
             </Carousel.Item>

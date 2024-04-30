@@ -25,7 +25,7 @@ export default function DetailsPage() {
   const sanitizedDescription = DOMPurify.sanitize(product.description);
 
   return (
-    <div>
+    <div className='mt-5'>
       <h1 className='product-name'>{product.name}</h1>
       <div className="row mb-2">
         <div className="col-md-6">
@@ -33,19 +33,16 @@ export default function DetailsPage() {
         </div>
         <div className="col-md-6">
           <h1 className='product-name py-4'>{product.name}</h1>
-
           <div className="row">
             <div className="d-flex align-items-center pb-4 col-sm-6">
-              <span className='gray circle'><FontAwesomeIcon className='circle-icon' icon={faCircle} /></span>
+              <span className='gray circle' style={{left: '12px'}}><FontAwesomeIcon className='circle-icon' icon={faCircle} /></span>
               <span className='price standard-text fs-5'>
                 {product.price}€
               </span>
             </div>
-
             <div className="col-sm-6">
               <div className="row justify-content-between ailgn-items-center">
-
-                <CartFunctionality product={product}/>
+                <CartFunctionality product={product} />
               </div>
             </div>
             {/* Add to cart and counter */}
@@ -57,30 +54,29 @@ export default function DetailsPage() {
                 {product.product_colors.map((color) => (
                   <OverlayTrigger
                     key={color.hex_value} // Added key prop
-                    placement="top" 
+                    placement="top"
                     overlay={
                       <Tooltip id="tooltip-top">
                         {color.colour_name}
                       </Tooltip>
                     }>
                     <div className="col-auto color-options" >
-                      <FontAwesomeIcon style={{color: `${color.hex_value}`}} icon={faCircle} className='border rounded-circle border-dark-subtle' />
+                      <FontAwesomeIcon style={{ color: `${color.hex_value}` }} icon={faCircle} className='border rounded-circle border-dark-subtle' />
                     </div>
                   </OverlayTrigger>
                 ))}
               </div>
             </div>
           )
-          : null // Simplified empty condition
+            : null // Simplified empty condition
           }
-
           <div className="row">
             <h1 className='product-name'>Product Description</h1>
             <p className='standard-text lh-lg' dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row mb-4">
         <PageEnd />
         <DetailsPageBanner />
       </div>

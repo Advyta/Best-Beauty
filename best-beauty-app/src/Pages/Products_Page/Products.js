@@ -6,7 +6,7 @@ import ProductSort from './ProductSort';
 
 export default function Products() {
   return (
-    <div>
+    <div className='mt-4'>
       <ProductsBanner />
       <div className="row mt-4 justify-content-between">
         <div className="col-md-3">

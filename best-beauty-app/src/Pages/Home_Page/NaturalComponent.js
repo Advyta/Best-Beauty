@@ -2,7 +2,6 @@ import React from 'react'
 import './Home.css'
 import { useSelector } from 'react-redux'
 import Spinner from 'react-bootstrap/Spinner';
-// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import PageEnd from './PageEnd';
 import { Link } from 'react-router-dom';
@@ -15,7 +14,6 @@ export default function NaturalComponent() {
     const naturalProductsList = allProductsList.filter((product) => product.tag_list.includes('Natural'));
     naturalProductsList.sort((a, b) => b.rating - a.rating);
     const displayedProducts = naturalProductsList.slice(0, 8);
-    console.log(naturalProductsList);
 
     if (status === 'loading') {
         return (
@@ -47,7 +45,7 @@ export default function NaturalComponent() {
                       <Card.Text>{product.name}</Card.Text>
                       <div className="row justify-content-between">
                         <div className="col-4 d-flex">
-                          <span className='gray circle'><i className="fa-solid fa-circle"></i></span>
+                          <span className='gray circle' style={{left: '12px'}}><i className="fa-solid fa-circle"></i></span>
                           <Card.Title>{product.price}€</Card.Title>                      
                         </div>
                         <div className="col-4">

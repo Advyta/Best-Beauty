@@ -6,7 +6,7 @@
 }
 .circle{
   position: relative;
-  left: 12px;
+  /* left: 12px; */
 }
 .circle > i, .circle-icon{
   font-size: 24px;

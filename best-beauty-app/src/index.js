@@ -14,18 +14,22 @@ import Products from './Pages/Products_Page/Products';
 import DetailsPage from './Pages/Details_Page/DetailsPage';
 import NotFoundPage from './Pages/NotFoundPage';
 import CartPage from './Pages/Cart/CartPage';
+import Login from './Pages/Authentication/AuthPages/Login';
+import Signup from './Pages/Authentication/AuthPages/Signup';
 
 store.dispatch(allProducts());
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createHashRouter(
   createRoutesFromElements(
-    <Route path='/' element = {<Layout />}>
-      <Route path='' element = {<Home/>} />
-      <Route path='Products' element = {<Products/>} />
-      <Route path='DetailsPage/:productId' element = {<DetailsPage/>} />
-      <Route path='CartPage' element = {<CartPage />} />
-      <Route path='*' element = {<NotFoundPage/>} />
+    <Route path='/' element={<Layout />}>
+      <Route path='' element={<Home />} />
+      <Route path='Products' element={<Products />} />
+      <Route path='DetailsPage/:productId' element={<DetailsPage />} />
+      <Route path='CartPage' element={<CartPage />} />
+      <Route path='Login' element={<Login />} />
+      <Route path='Signup' element={<Signup />} />
+      <Route path='*' element={<NotFoundPage />} />
     </Route>
   )
 );

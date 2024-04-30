@@ -42,3 +42,18 @@
         scale: 1;
     }
 }
+
+.golden{
+    color: gold;
+}
+.pink-pagination .page-link {
+    color: rgb(224, 95, 213);
+  }
+  .pink-pagination .page-link:hover {
+    color: rgb(205, 13, 189);
+  }
+
+  .pink-pagination .page-item.active .page-link {
+    background-color: rgba(195, 0, 179, 0.619);
+    border-color: #ff70e2;
+  }

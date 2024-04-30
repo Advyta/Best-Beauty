@@ -1,4 +1,5 @@
 import Pagination from 'react-bootstrap/Pagination';
+import './Products.css';
 
 export default function PaginationComponent({ currentPage, setCurrentPage, totalPages }) {
     let items = [];
@@ -29,6 +30,6 @@ export default function PaginationComponent({ currentPage, setCurrentPage, total
       <Pagination.Last onClick={() => setCurrentPage(totalPages)} />
     );
   
-    return <Pagination className='justify-content-center'>{items}</Pagination>;
+    return <Pagination className='justify-content-center pink-pagination'>{items}</Pagination>;
   }
   
