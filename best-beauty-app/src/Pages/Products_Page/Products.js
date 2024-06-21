@@ -14,7 +14,7 @@ export default function Products() {
         </div>
       </div>
       <div className="row mt-5">
-        <div className="col-2 border-end">
+        <div className="col-2 border-end ps-0">
             <ProductsSidebar />
         </div>
         <div className="col-10">

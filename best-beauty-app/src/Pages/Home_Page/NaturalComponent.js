@@ -3,6 +3,7 @@ import './Home.css'
 import { useSelector } from 'react-redux'
 import Spinner from 'react-bootstrap/Spinner';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/esm/Button';
 import PageEnd from './PageEnd';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +11,6 @@ export default function NaturalComponent() {
     const allProductsList = useSelector(state => state.products.products);
     const status = useSelector(state => state.products.status);
     const error = useSelector(state => state.products.error);
-
     const naturalProductsList = allProductsList.filter((product) => product.tag_list.includes('Natural'));
     naturalProductsList.sort((a, b) => b.rating - a.rating);
     const displayedProducts = naturalProductsList.slice(0, 8);
@@ -33,7 +33,7 @@ export default function NaturalComponent() {
                   <h3 className='section-title'>Natural Beauty</h3>
                 </div>
                 <div className="col-2">
-                  <button className='see-more-button'>See more</button>
+                  <Button className='see-more-button'>See more</Button>
                 </div>
               </div>
               <div className="row mt-4">

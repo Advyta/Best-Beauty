@@ -10,7 +10,6 @@ export default function Home() {
   const allProductsList = useSelector(state => state.products.products);
   const status = useSelector(state => state.products.status);
   const error = useSelector(state => state.products.error);
-  
   const carouselProductsId = [73, 383, 449];
   const carouselProducts = allProductsList.filter(product => carouselProductsId.includes(product.id));
 

@@ -2,9 +2,13 @@ import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const PRODUCTS_URL = 'https://makeup-api.herokuapp.com/api/v1/products.json';
+
 export const allProducts = createAsyncThunk('products/allProducts', async (productType) => {
     try {
-        const response = await axios.get(productType ? `${PRODUCTS_URL}?product_type=${productType}` : PRODUCTS_URL);
+        const response = await axios.get(
+            productType ? `${PRODUCTS_URL}?product_type=${productType}` : PRODUCTS_URL
+        );
+
         return response.data;
     } catch (error) {
         console.log(error);
