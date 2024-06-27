@@ -3,6 +3,8 @@
 ## Project Description
 Best Beauty is a responsive e-commerce web application designed to provide users with a seamless shopping experience for beauty products. The application includes a variety of features such as user authentication, product listing with filtering and sorting, product details, cart functionality, and more.
 
+![Webpage](src/Assets/Webpage.png)
+
 ## Features
 - **User Authentication:** Users can sign up, log in, and log out securely.
 - **Product Listing:** Display a wide range of beauty products with the ability to filter and sort them.
